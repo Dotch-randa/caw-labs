@@ -1,0 +1,42 @@
+html, body {
+  padding: 0;
+  margin: 0;
+}
+body {
+  padding: 50px;                  /* inner margin  */
+  background-color: #e8eae8;      /* a background color*/
+  color: #5d665b;                 /* a font color */
+  font-family: Verdana, Geneva, Arial, sans-serif; /* text fonts */
+  font-size: small;               /* a font size : small */
+  line-height: 1.8;               /* 180% = 1.8 */
+  /* margin of the <body> : top 70px, right 50px, bottom 70px, left 120px */
+  margin: 70px 50px 70px 120px;
+}
+
+/* 7.Assign the first <h2> a font size of 75% */
+h2:first-of-type {
+  font-size: 75%;
+}
+
+/* Assign the first <p> a font size of 70% */
+p:first-of-type {
+  font-size: 70%;
+}
+
+/* Assign the second <p> a text indent of 3em */
+p:nth-of-type(2) {
+  text-indent: 3em;
+}
+
+/* Assign the title text <h1> the color #ffffdd. */
+h1 {
+  color: #ffffdd;
+}
+
+/*assign <h2> font-color #966b72 and the font-family Georgia. */
+h2 {
+  color: #966b72;
+  font-family: Georgia, serif;
+}
+
+

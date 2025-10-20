@@ -1,0 +1,107 @@
+* {
+  font-family: sans-serif;
+  line-height: 1.6;
+}
+
+/* a background color gray #f4f4f4 */
+body {
+  background-color: #f4f4f4;
+}
+
+/*  h1 and h2 colordark blue #336699 */
+h1, h2 {
+  text-align: center;
+  color: #336699;
+}
+
+/* margin-bottom: 1em; to all paragraphs*/
+p {
+  margin-bottom: 1em;
+}
+
+/* 2. Class and ID Selectors */
+/*ID special and background-color yellow */
+#special {
+  background-color: #fffacd; 
+  padding: 10px;
+}
+
+/* class hello :color (green #28a745) and font-weight: bold; */
+.hello {
+  color: #28a745; 
+  font-weight: bold;
+}
+
+/* 3. Descendant and Child Selectors */
+/* <h2> elements that are direct children of an <div class="main-content"> and div.ai-tools */
+div.main-content > h2,
+div.ai-tools > h2 {
+  text-transform: uppercase;
+}
+
+/*<li> elements that are descendants of a <div class="ai-tools"> to have a list-style-type: square; */
+div.ai-tools li {
+  list-style-type: square;
+}
+
+/*  padding-left: 20px; to all ul inside the div.ai-tools*/
+div.ai-tools ul {
+  padding-left: 20px;
+}
+
+/* 4. Attribute Selectors */
+/* all <input> elements with the type="text" */
+input[type="text"] {
+  border: 1px solid #ccc;
+  padding: 8px;
+}
+
+/* input element with type="submit". */
+input[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  padding: 8px 12px;
+}
+
+/* 5. Pseudo-classes et pseudo-éléments */
+/* of all <a> (link) elements to a primary blue */
+a {
+  color: #007bff;
+}
+
+/*<a> tags on hover (:hover) */
+a:hover {
+  text-decoration: none;
+  color: #0056b3;
+}
+
+/* "visited link ", change its color to a subtle gray */
+a:visited {
+  color: #6c757d;
+}
+
+/* Focus: visible border for inputs when focused (accessibility) */
+input:focus,
+textarea:focus,
+select:focus {
+  border: 2px solid blue;
+  outline: none; /* optionnel mais améliore le rendu */
+}
+
+/* 6. Combining Selectors & Specificity Challenge */
+/* Using a combination of selectors target only the <li> elements */
+div.ai-tools li.hello {
+  font-style: italic;
+}
+
+/* <h1> element inside the <footer> and gives it font-size: 1.2em;.*/
+footer h1 {
+  font-size: 1.2em;
+}
+
+/* font-size: 2em for all <h1> elements */
+h1 {
+  font-size: 2em;
+}
